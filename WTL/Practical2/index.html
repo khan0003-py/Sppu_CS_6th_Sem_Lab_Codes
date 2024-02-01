@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            background-image: url("https://luxius.com/media/dwehiyof/restaurant-noor-003.jpg?anchor=center&mode=crop&width=1920&height=800&width=1920&height=800&format=webp&quality=30&rnd=133091792513200000");
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Table CSS */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            background-color: #333;
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e64a19;
+            color: #fff;
+        }
+
+        /* Form CSS */
+        form {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #e64a19;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-color: #e64a19; color: #fff; padding: 10px; text-align: center;">
+        <h1>Delicious Restaurant</h1>
+        <p>Good Food, Good Mood</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#" style="color:white; text-decoration: none;">Home</a></li>
+            <li><a href="#" style="color:white; text-decoration: none;">Menu</a></li>
+            <li><a href="#" style="color:white; text-decoration: none;">About Us</a></li>
+            <li><a href="#" style="color:white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 style="text-align: center; color: white;">Our Menu</h2>
+
+        <!-- Table for menu -->
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Spaghetti Bolognese</td>
+                <td>Classic Italian pasta with meat sauce</td>
+                <td>$12.99</td>
+            </tr>
+            <tr>
+                <td>Grilled Salmon</td>
+                <td>Fresh salmon grilled to perfection</td>
+                <td>$16.99</td>
+            </tr>
+            <!-- More items... -->
+        </table>
+    </section>
+
+    <section>
+        <h2 style="text-align: center; color: white;">Contact Us</h2>
+
+        <!-- Form for contact -->
+        <form style="color: white;"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Id" required>
+
+            <label for="message" >Message:</label>
+            <textarea id="message" name="message" placeholder="Type A Message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Delicious Restaurant</p>
+    </footer>
+
+</body>
+
+</html>
