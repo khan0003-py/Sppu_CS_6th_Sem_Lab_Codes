@@ -1,0 +1,14 @@
+package com.prctical10;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+
+@Stateless
+@LocalBean
+public class DepositBean {
+
+    public DepositBean() {
+        // TODO Auto-generated constructor stub
+    }
+
+}
