@@ -1,0 +1,36 @@
+﻿<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-W+iAg+g8moeSopCqzDczDXwFvZ3gF5n1nQ4rjQOxLtf4pGlo89LlqVGf8DjxciyY7vuE6oOyHWv6yFxKxjAmkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<main class="bg-dark">
+    <!-- nav -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="user">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+            <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Users</a>
+            <button class="btn btn-link nav-item nav-link" (click)="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <!-- main app container -->
+    <div class="app-container" [ngClass]="{ 'bg-light': user }">
+        <alert></alert>
+        <router-outlet></router-outlet>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <a href="https://github.com/khan0003-py/Sppu_CS_6th_Sem_Lab_Codes/tree/master/WTL/Practical9" target="_top" class="text-white mr-3">
+                        GitHub
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <a href="https://studio.youtube.com/channel/UCcY0wtVtPPUy8K7FnoLL3LQ" target="_top" class="text-white">
+                        Youtube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</main>
