@@ -24,6 +24,13 @@ To run this project on your local machine, follow these steps:
    - Alternatively, you can start the app with the Angular CLI command `ng serve --open`.
    - To do this, first install the Angular CLI globally on your system with the command `npm install -g @angular/cli`.
 
+## Copyright
+
+©2022 Jason Watmore
+
+## Source
+This project is based on the Angular user registration and login example tutorial by Jason Watmore. You can find the tutorial at [https://jasonwatmore.com/post/2022/11/29/angular-14-user-registration-and-login-example-tutorial](https://jasonwatmore.com/post/2022/11/29/angular-14-user-registration-and-login-example-tutorial).
+
 ## Additional Information
 
 Feel free to add any additional information about your project here, such as its purpose, features, and how to use it.
