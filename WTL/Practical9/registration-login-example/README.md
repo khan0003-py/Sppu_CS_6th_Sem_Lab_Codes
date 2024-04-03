@@ -24,7 +24,7 @@ To run this project on your local machine, follow these steps:
    - Alternatively, you can start the app with the Angular CLI command `ng serve --open`.
    - To do this, first install the Angular CLI globally on your system with the command `npm install -g @angular/cli`.
 
-## Copyright
+## Credit
 
 ©2022 Jason Watmore
 
