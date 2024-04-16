@@ -1,0 +1,53 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Struts 2 Core
+
+
+From: 'an unknown organization'
+  - Hamcrest Core (https://github.com/hamcrest/JavaHamcrest/hamcrest-core) org.hamcrest:hamcrest-core:jar:1.3
+    License: New BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+
+From: 'Apache Software Foundation' (http://apache.org)
+  - Apache FreeMarker (https://freemarker.apache.org/) org.freemarker:freemarker:jar:2.3.32
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'JUnit' (http://www.junit.org)
+  - JUnit (http://junit.org) junit:junit:jar:4.13.1
+    License: Eclipse Public License 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+
+From: 'OpenSymphony' (http://www.opensymphony.com)
+  - OGNL - Object Graph Navigation Library (https://github.com/jkuhnert/ognl/) ognl:ognl:jar:3.3.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:2.0.7
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From: 'Shigeru Chiba, www.javassist.org'
+  - Javassist (http://www.javassist.org/) org.javassist:javassist:bundle:3.29.0-GA
+    License: MPL 1.1  (http://www.mozilla.org/MPL/MPL-1.1.html)    License: LGPL 2.1  (http://www.gnu.org/licenses/lgpl-2.1.html)    License: Apache License 2.0  (https://www.apache.org/licenses/LICENSE-2.0)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Commons Logging (http://commons.apache.org/proper/commons-logging/) commons-logging:commons-logging:jar:1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (https://www.apache.org/)
+  - Apache Commons FileUpload (https://commons.apache.org/proper/commons-fileupload/) commons-fileupload:commons-fileupload:jar:1.5
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons IO (https://commons.apache.org/proper/commons-io/) commons-io:commons-io:jar:2.13.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (https://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.13.0
+    License: Apache-2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Text (https://commons.apache.org/proper/commons-text) org.apache.commons:commons-text:jar:1.10.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Log4j API (https://logging.apache.org/log4j/2.x/log4j-api/) org.apache.logging.log4j:log4j-api:jar:2.20.0
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Struts Annotations (https://struts.apache.org) org.apache.struts:struts-annotations:jar:1.0.8
+    License: Apache License, Version 2.0  (https://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

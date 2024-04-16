@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+E:\Eclipse Java Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1831798762.index
+\Struts2\src
+E:\Eclipse Java Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3685985825.index
+\Practical8\src\main\java
