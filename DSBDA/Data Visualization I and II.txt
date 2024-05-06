@@ -1,0 +1,24 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+from seaborn import load_dataset
+
+titanic = load_dataset('titanic')
+
+# Data Visualization I
+# 1. Histogram of ticket price distribution
+plt.figure(figsize=(10, 6))
+sns.histplot(titanic['fare'], kde=True, color='skyblue')
+plt.title('Distribution of Ticket Price')
+plt.xlabel('Fare')
+plt.ylabel('Frequency')
+plt.show()
+
+# Data Visualization II
+# 1. Box plot for distribution of age with respect to gender and survival
+plt.figure(figsize=(10, 6))
+sns.boxplot(x='sex', y='age', hue='survived', data=titanic)
+plt.title('Distribution of Age by Gender and Survival')
+plt.xlabel('Gender')
+plt.ylabel('Age')
+plt.legend(title='Survived', loc='upper right', labels=['No', 'Yes'])
+plt.show()

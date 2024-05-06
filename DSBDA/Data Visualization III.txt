@@ -1,0 +1,27 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+iris_data = sns.load_dataset("iris")
+
+features_and_types = iris_data.dtypes
+print("Features and their types:")
+print(features_and_types)
+
+print("Histogram: ")
+for feature in iris_data.columns[:-1]:
+  plt.figure(figsize=(6,4))
+  sns.histplot(data=iris_data[feature],kde=True)
+  plt.title(f'Histogram of {feature}')
+  plt.xlabel(feature)
+  plt.ylabel('Frequency')
+  plt.show()
+
+print("Boxplots for each feature:")
+for feature in iris_data.columns[:-1]:
+    plt.figure(figsize=(6, 4))
+    sns.boxplot(data=iris_data, x='species', y=feature)
+    plt.title(f'Boxplot of {feature}')
+    plt.xlabel('Species')
+    plt.ylabel(feature)
+    plt.show()
