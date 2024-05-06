@@ -2,6 +2,7 @@ import math
 
 def encrypt(message, public_key):
     ciphertext = pow(message, public_key[0], public_key[1])
+    
     return ciphertext
 
 def decrypt(ciphertext, private_key):
