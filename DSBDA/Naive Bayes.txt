@@ -1,0 +1,38 @@
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score
+
+# Load the iris dataset
+iris_data = pd.read_csv("iris.csv")
+
+# Prepare features and target variable
+X = iris_data.drop('Species', axis=1)
+y = iris_data['Species']
+
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Train the Naïve Bayes model
+model = GaussianNB()
+model.fit(X_train, y_train)
+
+# Predict on the test set
+y_pred = model.predict(X_test)
+
+# Compute Confusion Matrix
+conf_matrix = confusion_matrix(y_test, y_pred)
+print("Confusion Matrix:")
+print(conf_matrix)
+
+# Compute Accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy:", accuracy)
+
+# Compute Precision
+precision = precision_score(y_test, y_pred, average='weighted')
+print("Precision:", precision)
+
+# Compute Recall
+recall = recall_score(y_test, y_pred, average='weighted')
+print("Recall:", recall)
