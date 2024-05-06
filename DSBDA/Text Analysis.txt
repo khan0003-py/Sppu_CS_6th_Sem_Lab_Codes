@@ -1,0 +1,50 @@
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import PorterStemmer, WordNetLemmatizer
+from nltk import pos_tag
+import math
+
+# Sample Document
+document = "Text analytics is the process of deriving information from text data. It involves various techniques like tokenization, POS tagging, stemming, and lemmatization."
+
+# Tokenization
+tokens = word_tokenize(document)
+
+# POS Tagging
+pos_tags = pos_tag(tokens)
+
+# Stop Words Removal
+stop_words = set(stopwords.words('english'))
+filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
+
+# Stemming
+stemmer = PorterStemmer()
+stemmed_tokens = [stemmer.stem(word) for word in filtered_tokens]
+
+# Lemmatization
+lemmatizer = WordNetLemmatizer()
+lemmatized_tokens = [lemmatizer.lemmatize(word) for word in filtered_tokens]
+
+# Calculating TF
+tf = {}
+for word in stemmed_tokens:
+    if word in tf:
+        tf[word] += 1
+    else:
+        tf[word] = 1
+
+# Calculating IDF
+total_documents = 1  # Assuming only one document for simplicity
+idf = {}
+for word in set(stemmed_tokens):
+    idf[word] = math.log(total_documents / (sum(1 for doc in [stemmed_tokens] if word in doc)))
+
+# Printing results
+print("Original Tokens:", tokens)
+print("POS Tags:", pos_tags)
+print("Filtered Tokens:", filtered_tokens)
+print("Stemmed Tokens:", stemmed_tokens)
+print("Lemmatized Tokens:", lemmatized_tokens)
+print("Term Frequency (TF):", tf)
+print("Inverse Document Frequency (IDF):", idf)
